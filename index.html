@@ -28,9 +28,13 @@
                 width: 400px;
                 padding: 10px;
                 border-radius: 15px;
-                font-weight: bold;
             }
             .form-section {
+                text-align: center;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+            .form-section2 {
                 text-align: center;
                 margin-top: 10px;
             }
@@ -54,7 +58,7 @@
         <!--Form Below-->
         <div class="center-text">
         <form id="survey-form">
-            <div class="center-text">
+            <div class="form-section">
             <h2>Survey Form</h2>
             <label id="name-label" for="name">Name</label>
             <input type="text" id="name" placeholder="Please enter your name" required>
@@ -77,14 +81,14 @@
             <option value="prefer not to say>">Prefer not to say</option>
             </select>
         </div>
-        <div class="form-section">
-            <label for="input-radio">Preferred way to hear back from us?</label>
+        <div class="form-section2">
+            <label for="input-radio"><b>Preferred way to hear back from us?</b></b></label>
             <br>
             <label><input name="input-radio" value="phone" type="radio">Phone</label>
             <label><input name="input-radio" value="phone" type="radio">Email</label>
         </div>
-        <div class="form-section">
-            <label for"checkbox>Which of these foods do you enjoy?</label>
+        <div class="form-section2">
+            <label for"checkbox><b>Which of these foods do you enjoy?</b></label>
             <br>
             <label>
             <input type="checkbox" name="checkbox" value="curry">Curry</label>
