@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+    <header>
+        <!--FCC Script-->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        
+        <!--CSS below-->
+       <style>
+            body {
+                background-image:url("Images/BBG2.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+                color: white;
+                font-family: Ubuntu, sans-serif; 
+            }
+            .center-text {
+                text-align: center;
+            }
+            form {
+                display: inline-block;
+                text-align: center;
+                margin-top: 60px;
+                /*background: rgba(0, 145, 255, 0.103);*/
+                background: rgba(60, 165, 255, 0.082);
+                width: 400px;
+                padding: 10px;
+                border-radius: 15px;
+                font-weight: bold;
+            }
+            .form-section {
+                text-align: center;
+                margin-top: 10px;
+            }
+            #textarea {
+                min-height: 100px;
+            }
+            .submit-button {
+                background-color: green;
+                margin:10px;
+                padding: 5px;
+            }
+        </style>
+
+        <!--Header Area Below-->
+        <title>Red Justice Web Form</title>
+        <h1 id="title" class="center-text">Red Justice Web Form</h1>
+        <p id="description" class="center-text">This is the first web form I have built using HTML and CSS.</p>
+
+    </header>
+    <body>
+        <!--Form Below-->
+        <div class="center-text">
+        <form id="survey-form">
+            <div class="center-text">
+            <h2>Survey Form</h2>
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" placeholder="Please enter your name" required>
+        </div>
+        <div class="form-section">
+            <label for "email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Please enter your email address" required>
+        </div>
+        <div class="form-section">
+            <label id="number-label" for "number">Age (optional)</label>
+            <input type="number" min="10" max="99" id="number" placeholder="(Eg. 22)">
+        </div>
+        <div class="form-section">
+            <label for="dropdown">Gender</label>
+            <select name="dropdown" id="dropdown" required>
+            <option disabled selected value>Please select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+            <option value="prefer not to say>">Prefer not to say</option>
+            </select>
+        </div>
+        <div class="form-section">
+            <label for="input-radio">Preferred way to hear back from us?</label>
+            <br>
+            <label><input name="input-radio" value="phone" type="radio">Phone</label>
+            <label><input name="input-radio" value="phone" type="radio">Email</label>
+        </div>
+        <div class="form-section">
+            <label for"checkbox>Which of these foods do you enjoy?</label>
+            <br>
+            <label>
+            <input type="checkbox" name="checkbox" value="curry">Curry</label>
+            <label>
+            <input type="checkbox" name="checkbox" value="kebab">Kebab</label>
+            <label>
+                <input type="checkbox" name="checkbox" value="chowmein">Chow Mein</label>
+                <label>
+                    <input type="checkbox" name="checkbox" value="fishchips">Fish & Chips</label>
+        </div>
+        <div class="form-section">
+            <label for "textarea">Message</label>
+            <textarea type="text" id="textarea" placeholder="Please enter your message here" required></textarea>
+        </div>
+        <button type="submit" class="submit-button" id="submit">Submit</button>
+        </form>
+    </div>
+    </body>
+</html>
